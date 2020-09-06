@@ -536,30 +536,14 @@ a {
     box-shadow: 0 4px 25px rgba(0, 0, 0, .25);
     font-size: 16px;
     font-weight: 300;
+    transition: 1s;
 }
 
 .menu__item:hover {
-    animation: menuItemRotate 1s;
-    transform-style: preserve-3d;
-    perspective: 1000px;
+    transform: scale(1.1);
     transition: 1s;
-}
-@keyframes menuItemRotate{
-    25% {
-        transform: translate(10%, 10%)
-                rotateY(20deg)
-                skewY(3deg);
-    }
-    50% {
-        transform: translate(30%, 10%)
-        rotateY(-20deg)
-        skewY(-3deg);
-    }
-    75% {
-        transform: translate(50%, 10%)
-        rotateY(-20deg)
-        skewY(3deg);
-    }
+    border: 5px solid #EEE8AA;
+    border-radius: 8px;
 }
 
 .menu__item img {
